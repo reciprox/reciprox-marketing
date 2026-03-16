@@ -7,7 +7,7 @@ const FEATURES = [
   { icon: '🧠', title: 'AI Coach', desc: 'Your personal networking strategist. Ask anything about referral strategy, follow-up timing, or how to grow your network.' },
   { icon: '📷', title: 'Business Card Scanner', desc: 'Scan any business card with your phone camera. Contact info is extracted and saved instantly.' },
   { icon: '📋', title: 'Relationship Intelligence', desc: 'Rich contact profiles with business info, personal notes, interests, and conversation starters — everything you need to build real relationships.' },
-  { icon: '📱', title: 'Mobile First', desc: 'Built for professionals on the go. Use it at networking events, BNI meetings, and coffee chats right from your phone.' },
+  { icon: '📱', title: 'Mobile First', desc: 'Built for professionals on the go. Use it at networking events, chamber meetings, and coffee chats right from your phone.' },
 ]
 
 const STEPS = [
@@ -32,7 +32,7 @@ const PLANS = [
     price: '19',
     period: 'per month',
     description: 'For solo professionals',
-    features: ['Up to 150 contacts', '✨ AI message writer', '📷 Business card scanner', 'Referral tracking', 'Everything in Free'],
+    features: ['Up to 150 contacts', '✨ AI message writer', '📷 Business card scanner', 'Referral tracking', '📧 Email & SMS sending', 'Everything in Free'],
     cta: 'Get early access',
     highlight: false,
   },
@@ -41,7 +41,7 @@ const PLANS = [
     price: '39',
     period: 'per month',
     description: 'For active networkers',
-    features: ['Unlimited contacts', '✨ AI Coach', 'Introduction tracking', 'Email & SMS sending', 'Relationship scoring', 'Everything in Solo'],
+    features: ['Unlimited contacts', '✨ AI Coach', 'Introduction tracking', 'Relationship scoring', 'Everything in Solo'],
     cta: 'Get early access',
     highlight: true,
     badge: 'Most popular',
@@ -58,7 +58,7 @@ const PLANS = [
 ]
 
 const FAQS = [
-  { q: 'Who is ReciProX for?', a: 'ReciProX is built for referral-driven professionals — BNI members, realtors, consultants, insurance agents, mortgage brokers, and anyone who grows their business through relationships and trusted introductions.' },
+  { q: 'Who is ReciProX for?', a: 'ReciProX is built for referral-driven professionals — realtors, consultants, insurance agents, mortgage brokers, financial advisors, and anyone who grows their business through relationships and trusted introductions.' },
   { q: 'How is ReciProX different from a regular CRM?', a: 'Most CRMs are built for sales pipelines and deals. ReciProX is built specifically for referral relationships — tracking introductions, logging interactions, measuring reciprocity, and using AI to help you nurture your network.' },
   { q: 'Do I need to be technical to use it?', a: 'Not at all. ReciProX is designed to be simple and mobile-first. If you can use your phone, you can use ReciProX.' },
   { q: 'Can I use it on my phone?', a: 'Yes — ReciProX is mobile-first. You can scan business cards, log interactions, and send AI-written messages right from your phone at networking events.' },
@@ -110,7 +110,7 @@ export default function HomePage() {
           ReciProX is the AI-powered referral relationship platform for professionals who grow their business through trusted introductions.
         </p>
         <p className="text-base mb-10" style={{ color: 'rgba(45,27,105,0.5)' }}>
-          Built for BNI members, realtors, consultants, and anyone who knows that the best leads come from people who know, like, and trust you.
+          Built for realtors, consultants, financial professionals, and anyone who knows that the best leads come from people who know, like, and trust you.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a href="https://reciprox.app/signup" className="px-8 py-3.5 rounded-xl text-base font-medium text-white" style={{ background: 'var(--brand-indigo)' }}>
@@ -128,7 +128,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm mb-6" style={{ color: 'rgba(45,27,105,0.5)' }}>Built for professionals who grow through referrals</p>
           <div className="flex flex-wrap justify-center gap-6">
-            {['BNI Members', 'Realtors', 'Insurance Agents', 'Mortgage Brokers', 'Consultants', 'IT Professionals'].map(type => (
+            {['Realtors', 'Insurance Agents', 'Mortgage Brokers', 'Consultants', 'IT Professionals', 'Financial Advisors'].map(type => (
               <span key={type} className="text-sm px-4 py-2 rounded-full" style={{ background: 'white', color: 'var(--brand-indigo)', border: '0.5px solid #e0ddf5' }}>{type}</span>
             ))}
           </div>
@@ -216,7 +216,7 @@ export default function HomePage() {
           <p className="text-lg mb-12" style={{ color: 'rgba(45,27,105,0.6)' }}>ReciProX is designed around how referral-driven professionals actually work.</p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { quote: 'I used to track my referrals in a spreadsheet. ReciProX finally gives me a tool that actually understands how relationship-based business works.', name: 'BNI Chapter Member', role: 'Insurance Agent' },
+              { quote: 'I used to track my referrals in a spreadsheet. ReciProX finally gives me a tool that actually understands how relationship-based business works.', name: 'Early Access User', role: 'Insurance Agent' },
               { quote: 'The AI message writer alone is worth it. I used to spend 20 minutes writing a follow-up. Now it takes 20 seconds and it sounds exactly like me.', name: 'Early Access User', role: 'Mortgage Broker' },
               { quote: 'Scanning business cards at events and having the contact ready to follow up in the app is a game changer. This is the tool I always wished existed.', name: 'Early Access User', role: 'Business Consultant' },
             ].map((t, i) => (
