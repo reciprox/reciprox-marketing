@@ -58,7 +58,7 @@ const PLANS = [
 ]
 
 const FAQS = [
-  { q: 'Who is ReciProX for?', a: 'ReciProX is built for referral-driven professionals — realtors, consultants, insurance agents, mortgage brokers, financial advisors, and anyone who grows their business through relationships and trusted introductions.' },
+  { q: 'Who is ReciProX for?', a: 'ReciProX is built for any service professional who grows their business through referrals — realtors, insurance agents, mortgage brokers, financial advisors, attorneys, CPAs, IT consultants, contractors, coaches, healthcare providers, recruiters, marketing agencies, and anyone else whose best clients come from trusted introductions.' },
   { q: 'How is ReciProX different from a regular CRM?', a: 'Most CRMs are built for sales pipelines and deals. ReciProX is built specifically for referral relationships — tracking introductions, logging interactions, measuring reciprocity, and using AI to help you nurture your network.' },
   { q: 'Do I need to be technical to use it?', a: 'Not at all. ReciProX is designed to be simple and mobile-first. If you can use your phone, you can use ReciProX.' },
   { q: 'Can I use it on my phone?', a: 'Yes — ReciProX is mobile-first. You can scan business cards, log interactions, and send AI-written messages right from your phone at networking events.' },
@@ -110,7 +110,7 @@ export default function HomePage() {
           ReciProX is the AI-powered referral relationship platform for professionals who grow their business through trusted introductions.
         </p>
         <p className="text-base mb-10" style={{ color: 'rgba(45,27,105,0.5)' }}>
-          Built for realtors, consultants, financial professionals, and anyone who knows that the best leads come from people who know, like, and trust you.
+          Built for service professionals across every industry — because the best leads come from people who know, like, and trust you.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a href="https://reciprox.app/signup" className="px-8 py-3.5 rounded-xl text-base font-medium text-white" style={{ background: 'var(--brand-indigo)' }}>
@@ -127,8 +127,8 @@ export default function HomePage() {
       <section className="py-8 px-6" style={{ background: 'var(--brand-surface)' }}>
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm mb-6" style={{ color: 'rgba(45,27,105,0.5)' }}>Built for professionals who grow through referrals</p>
-          <div className="flex flex-wrap justify-center gap-6">
-            {['Realtors', 'Insurance Agents', 'Mortgage Brokers', 'Consultants', 'IT Professionals', 'Financial Advisors'].map(type => (
+          <div className="flex flex-wrap justify-center gap-3">
+            {['Realtors', 'Insurance Agents', 'Mortgage Brokers', 'Financial Advisors', 'IT Professionals', 'Business Consultants', 'Attorneys', 'CPAs & Accountants', 'Contractors & Builders', 'Wealth Managers', 'HR Professionals', 'Marketing Agencies', 'Coaches & Trainers', 'Healthcare Providers', 'Staffing & Recruiters'].map(type => (
               <span key={type} className="text-sm px-4 py-2 rounded-full" style={{ background: 'white', color: 'var(--brand-indigo)', border: '0.5px solid #e0ddf5' }}>{type}</span>
             ))}
           </div>
@@ -261,7 +261,7 @@ export default function HomePage() {
           <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.7)' }}>Join professionals already using ReciProX to build stronger referral relationships and grow their business.</p>
           {submitted ? (
             <div className="px-6 py-4 rounded-xl text-base font-medium" style={{ background: 'var(--brand-amber)', color: 'white' }}>
-              ✓ You're on the list! We'll be in touch soon.
+              You are on the list! We will be in touch soon.
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -291,7 +291,7 @@ export default function HomePage() {
             <span className="text-lg font-bold text-white">Pro</span>
             <span className="text-lg font-bold" style={{ color: 'var(--brand-amber)' }}>X</span>
           </div>
-          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.3)' }}>© 2026 ReciProX. All rights reserved.</p>
+          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.3)' }}>2026 ReciProX. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="https://reciprox.app" className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>Launch app</a>
             <a href="mailto:hello@reciprox.com" className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>Contact</a>
