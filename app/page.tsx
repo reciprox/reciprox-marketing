@@ -2,19 +2,19 @@
 import { useState } from 'react'
 
 const FEATURES = [
-  { icon: '🤝', title: 'Referral Tracking', desc: 'Log every introduction and referral. Track status from suggested to closed won. See exactly who is sending you business.' },
-  { icon: '✨', title: 'AI Message Writer', desc: 'Generate personalized follow-ups, reconnect messages, thank you notes, and introduction emails in seconds.' },
-  { icon: '🧠', title: 'AI Coach', desc: 'Your personal networking strategist. Ask anything about referral strategy, follow-up timing, or how to grow your network.' },
-  { icon: '📷', title: 'Business Card Scanner', desc: 'Scan any business card with your phone camera. Contact info is extracted and saved instantly.' },
+  { icon: '🤝', title: 'Referral Tracking', desc: 'Log every introduction and referral. Track status from first contact to closed business. See exactly who is sending you revenue.' },
+  { icon: '✉️', title: 'Smart Message Writer', desc: 'Generate personalized follow-ups, reconnect messages, thank you notes, and introduction emails in seconds — written in your voice.' },
+  { icon: '🧭', title: 'Relationship Coach', desc: 'Your personal networking strategist. Get guidance on follow-up timing, referral strategy, and how to grow your most valuable partnerships.' },
+  { icon: '📷', title: 'Business Card Scanner', desc: 'Scan any business card with your phone camera. Contact info is extracted and saved instantly — no typing required.' },
   { icon: '📋', title: 'Relationship Intelligence', desc: 'Rich contact profiles with business info, personal notes, interests, and conversation starters — everything you need to build real relationships.' },
   { icon: '📱', title: 'Mobile First', desc: 'Built for professionals on the go. Use it at networking events, chamber meetings, and coffee chats right from your phone.' },
 ]
 
 const STEPS = [
-  { number: '01', title: 'Add your contacts', desc: 'Scan a business card or manually add contacts from your network. Build rich profiles with everything you need to nurture relationships.' },
-  { number: '02', title: 'Log your interactions', desc: 'After every meeting, coffee, or call — log what was discussed and set a next step. Never let a relationship go cold.' },
-  { number: '03', title: 'Let AI write your messages', desc: 'Select a contact, pick a message type, and let ReciProX write a personalized follow-up. Send via email or text in one tap.' },
-  { number: '04', title: 'Track your referrals', desc: 'Log every referral and introduction. Watch your referral network grow and see who your best partners are.' },
+  { number: '01', title: 'Build your referral network', desc: 'Scan a business card or add contacts from your network. Build rich profiles with everything you need to nurture relationships that actually send business.' },
+  { number: '02', title: 'Stay consistent', desc: 'After every meeting, coffee, or call — log what was discussed and set a next step. Never let a valuable relationship go cold again.' },
+  { number: '03', title: 'Communicate with confidence', desc: 'Select a contact, pick a message type, and get a personalized follow-up written for you. Send via email or text in one tap.' },
+  { number: '04', title: 'Track what matters', desc: 'Log every referral and introduction. Watch your referral network grow and see who your most valuable partners are.' },
 ]
 
 const PLANS = [
@@ -32,7 +32,7 @@ const PLANS = [
     price: '19',
     period: 'per month',
     description: 'For solo professionals',
-    features: ['Up to 150 contacts', '✨ AI message writer', '📷 Business card scanner', 'Referral tracking', '📧 Email & SMS sending', 'Everything in Free'],
+    features: ['Up to 150 contacts', '✉️ Smart message writer', '📷 Business card scanner', 'Referral tracking', '📧 Email & SMS sending', 'Everything in Free'],
     cta: 'Get early access',
     highlight: false,
   },
@@ -41,7 +41,7 @@ const PLANS = [
     price: '39',
     period: 'per month',
     description: 'For active networkers',
-    features: ['Unlimited contacts', '✨ AI Coach', 'Introduction tracking', 'Relationship scoring', 'Everything in Solo'],
+    features: ['Unlimited contacts', '🧭 Relationship coach', 'Introduction tracking', 'Relationship scoring', 'Weekly prep wizard', 'Everything in Solo'],
     cta: 'Get early access',
     highlight: true,
     badge: 'Most popular',
@@ -59,11 +59,28 @@ const PLANS = [
 
 const FAQS = [
   { q: 'Who is ReciProX for?', a: 'ReciProX is built for any service professional who grows their business through referrals — realtors, insurance agents, mortgage brokers, financial advisors, attorneys, CPAs, IT consultants, contractors, coaches, healthcare providers, recruiters, marketing agencies, and anyone else whose best clients come from trusted introductions.' },
-  { q: 'How is ReciProX different from a regular CRM?', a: 'Most CRMs are built for sales pipelines and deals. ReciProX is built specifically for referral relationships — tracking introductions, logging interactions, measuring reciprocity, and using AI to help you nurture your network.' },
+  { q: 'How is ReciProX different from a regular CRM?', a: 'Most CRMs are built for sales pipelines and deals. ReciProX is built specifically for referral relationships — tracking introductions, logging interactions, measuring reciprocity, and helping you nurture the partnerships that generate the most revenue.' },
   { q: 'Do I need to be technical to use it?', a: 'Not at all. ReciProX is designed to be simple and mobile-first. If you can use your phone, you can use ReciProX.' },
-  { q: 'Can I use it on my phone?', a: 'Yes — ReciProX is mobile-first. You can scan business cards, log interactions, and send AI-written messages right from your phone at networking events.' },
+  { q: 'Can I use it on my phone?', a: 'Yes — ReciProX is mobile-first. You can scan business cards, log interactions, and send personalized messages right from your phone at networking events. You can even install it on your home screen like a native app.' },
   { q: 'Is there a free trial?', a: 'Yes — our Free plan is free forever with up to 25 contacts. No credit card required.' },
   { q: 'When will paid plans be available?', a: 'We are currently in early access. Sign up now to get notified when paid plans launch and lock in early adopter pricing.' },
+  { q: 'How is this different from LinkedIn?', a: 'LinkedIn helps you connect with people. ReciProX helps you turn those connections into a referral engine — tracking who sends business, managing introductions, and keeping relationships warm so opportunities never fall through the cracks.' },
+]
+
+const PROBLEMS = [
+  'Referrals get forgotten after networking events',
+  'No system to track who sends you business',
+  'Relationships fade when you stop following up',
+  'No accountability for reciprocity',
+  'You rely on memory instead of a system',
+]
+
+const SOLUTIONS = [
+  'Every referral tracked from introduction to closed deal',
+  'See exactly which partners generate the most revenue',
+  'Never let a relationship go cold with smart follow-up reminders',
+  'Measure reciprocity and strengthen your best partnerships',
+  'A complete system that works while you focus on relationships',
 ]
 
 export default function HomePage() {
@@ -103,24 +120,24 @@ export default function HomePage() {
           🚀 Now in early access
         </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight" style={{ color: 'var(--brand-indigo)' }}>
-          Relationships<br/>
-          <span style={{ color: 'var(--brand-amber)' }}>that refer.</span>
+          Turn your network into<br/>
+          <span style={{ color: 'var(--brand-amber)' }}>a referral engine.</span>
         </h1>
         <p className="text-xl mb-4 max-w-2xl mx-auto" style={{ color: 'rgba(45,27,105,0.6)' }}>
-          ReciProX is the AI-powered referral relationship platform for professionals who grow their business through trusted introductions.
+          Most businesses rely on referrals but have no system to track or grow them. ReciProX gives you the operating system for your referral relationships.
         </p>
         <p className="text-base mb-10" style={{ color: 'rgba(45,27,105,0.5)' }}>
-          Built for service professionals across every industry — because the best leads come from people who know, like, and trust you.
+          Built for service professionals across every industry — because the best clients come from people who know, like, and trust you.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a href="https://reciprox.app/signup" className="px-8 py-3.5 rounded-xl text-base font-medium text-white" style={{ background: 'var(--brand-indigo)' }}>
-            Get early access — it's free
+            Start free — no credit card
           </a>
           <a href="#how-it-works" className="px-8 py-3.5 rounded-xl text-base font-medium" style={{ border: '1px solid #e0ddf5', color: 'var(--brand-indigo)' }}>
             See how it works
           </a>
         </div>
-        <p className="text-xs mt-4" style={{ color: 'rgba(45,27,105,0.4)' }}>No credit card required · Free plan available · Cancel anytime</p>
+        <p className="text-xs mt-4" style={{ color: 'rgba(45,27,105,0.4)' }}>Free plan available · No credit card required · Cancel anytime</p>
       </section>
 
       {/* Social proof bar */}
@@ -135,11 +152,41 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Problem / Solution */}
+      <section className="max-w-5xl mx-auto px-6 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'var(--brand-indigo)' }}>Referrals shouldn't rely on memory</h2>
+          <p className="text-lg" style={{ color: 'rgba(45,27,105,0.6)' }}>Most networking professionals leave money on the table every week — not because they lack relationships, but because they lack a system.</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white rounded-2xl p-6" style={{ border: '0.5px solid #e0ddf5' }}>
+            <h3 className="text-base font-semibold mb-4" style={{ color: 'rgba(45,27,105,0.5)' }}>❌ Without ReciProX</h3>
+            <div className="space-y-3">
+              {PROBLEMS.map((p, i) => (
+                <div key={i} className="flex items-start gap-3 text-sm" style={{ color: 'rgba(45,27,105,0.6)' }}>
+                  <span className="flex-shrink-0 mt-0.5" style={{ color: '#993C1D' }}>✗</span>{p}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-white rounded-2xl p-6" style={{ border: '1.5px solid var(--brand-amber)' }}>
+            <h3 className="text-base font-semibold mb-4" style={{ color: 'var(--brand-indigo)' }}>✅ With ReciProX</h3>
+            <div className="space-y-3">
+              {SOLUTIONS.map((s, i) => (
+                <div key={i} className="flex items-start gap-3 text-sm" style={{ color: 'var(--brand-indigo)' }}>
+                  <span className="flex-shrink-0 mt-0.5" style={{ color: '#27500A' }}>✓</span>{s}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features */}
-      <section id="features" className="max-w-6xl mx-auto px-6 py-20">
+      <section id="features" className="max-w-6xl mx-auto px-6 py-20" style={{ background: 'var(--brand-surface)' }}>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'var(--brand-indigo)' }}>Everything you need to grow through referrals</h2>
-          <p className="text-lg" style={{ color: 'rgba(45,27,105,0.6)' }}>ReciProX combines AI intelligence with relationship tracking to help you nurture your network and generate more referrals.</p>
+          <p className="text-lg" style={{ color: 'rgba(45,27,105,0.6)' }}>ReciProX combines relationship intelligence with powerful tools to help you nurture your network and generate more referrals.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {FEATURES.map(f => (
@@ -153,7 +200,7 @@ export default function HomePage() {
       </section>
 
       {/* How it works */}
-      <section id="how-it-works" className="py-20 px-6" style={{ background: 'var(--brand-surface)' }}>
+      <section id="how-it-works" className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: 'var(--brand-indigo)' }}>How it works</h2>
@@ -217,7 +264,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { quote: 'I used to track my referrals in a spreadsheet. ReciProX finally gives me a tool that actually understands how relationship-based business works.', name: 'Early Access User', role: 'Insurance Agent' },
-              { quote: 'The AI message writer alone is worth it. I used to spend 20 minutes writing a follow-up. Now it takes 20 seconds and it sounds exactly like me.', name: 'Early Access User', role: 'Mortgage Broker' },
+              { quote: 'The message writer alone is worth it. I used to spend 20 minutes writing a follow-up. Now it takes 20 seconds and it sounds exactly like me.', name: 'Early Access User', role: 'Mortgage Broker' },
               { quote: 'Scanning business cards at events and having the contact ready to follow up in the app is a game changer. This is the tool I always wished existed.', name: 'Early Access User', role: 'Business Consultant' },
             ].map((t, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 text-left" style={{ border: '0.5px solid #e0ddf5' }}>
@@ -257,8 +304,8 @@ export default function HomePage() {
       {/* CTA */}
       <section className="py-20 px-6" style={{ background: 'var(--brand-indigo)' }}>
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Ready to grow through referrals?</h2>
-          <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.7)' }}>Join professionals already using ReciProX to build stronger referral relationships and grow their business.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Build a network that actually sends business.</h2>
+          <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.7)' }}>Join professionals already using ReciProX to track referrals, strengthen partnerships, and grow their business through trusted introductions.</p>
           {submitted ? (
             <div className="px-6 py-4 rounded-xl text-base font-medium" style={{ background: 'var(--brand-amber)', color: 'white' }}>
               You are on the list! We will be in touch soon.
@@ -291,7 +338,7 @@ export default function HomePage() {
             <span className="text-lg font-bold text-white">Pro</span>
             <span className="text-lg font-bold" style={{ color: 'var(--brand-amber)' }}>X</span>
           </div>
-          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.3)' }}>2026 ReciProX. All rights reserved.</p>
+          <p className="text-xs" style={{ color: 'rgba(255,255,255,0.3)' }}>© 2026 ReciProX. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="https://reciprox.app" className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>Launch app</a>
             <a href="mailto:hello@reciprox.com" className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>Contact</a>
